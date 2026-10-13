@@ -43,3 +43,15 @@ button {
   border-bottom: 1px solid #ddd;
   padding: 12px 0;
 }
+header h1 {
+  letter-spacing: 1px;
+}
+
+section h2 {
+  color: #243b70;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
