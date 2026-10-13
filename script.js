@@ -52,9 +52,10 @@ document.getElementById("event-form").addEventListener("submit", e => {
 
   const name = document.getElementById("event-name").value.trim();
   const date = document.getElementById("event-date").value;
+  const today = new Date().toLocaleDateString("en-CA");
 
-  if (!name || !date) {
-    alert("Please enter the event name and date.");
+  if (!name || !date || date < today) {
+    alert("Enter an event name and a valid current or future date.");
     return;
   }
 
@@ -62,5 +63,4 @@ document.getElementById("event-form").addEventListener("submit", e => {
   displayEvents();
   e.target.reset();
 });
-
 displayEvents();
