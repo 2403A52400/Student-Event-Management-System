@@ -27,6 +27,7 @@ function displayEvents() {
   });
 }
 
+
 document.getElementById("registration-form").addEventListener("submit", e => {
   e.preventDefault();
 
@@ -34,8 +35,14 @@ document.getElementById("registration-form").addEventListener("submit", e => {
   const email = document.getElementById("student-email").value.trim();
   const event = document.getElementById("event-choice").value;
 
+  if (!name || !email || !event) {
+    document.getElementById("message").textContent =
+      "Please fill in all registration details.";
+    return;
+  }
+
   document.getElementById("message").textContent =
-    `Demo registration successful for ${name} (${email}) - ${event}.`;
+    `Registration successful for ${name} (${email}) - ${event}.`;
 
   e.target.reset();
 });
