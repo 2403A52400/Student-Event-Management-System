@@ -1,1 +1,4 @@
-# Student-Event-Management-System
+# Student Event Management System
+
+# Project status: Developed by Developer One.
+
