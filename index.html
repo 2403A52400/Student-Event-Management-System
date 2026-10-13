@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Event Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Event Management System</h1>
+    <p>Discover and register for college events</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+      <div id="event-list"></div>
+    </section>
+
+    <section>
+      <h2>Student Registration</h2>
+      <form id="registration-form">
+        <input id="student-name" placeholder="Student name" required>
+        <input id="student-email" type="email" placeholder="Email" required>
+        <select id="event-choice" required>
+          <option value="">Select event</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section>
+      <h2>Admin: Add Event</h2>
+      <form id="event-form">
+        <input id="event-name" placeholder="Event name" required>
+        <input id="event-date" type="date" required>
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
