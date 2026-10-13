@@ -13,7 +13,7 @@ function displayEvents() {
   choice.innerHTML = '<option value="">Select event</option>';
 
   events.sort((a, b) => a.date.localeCompare(b.date));
-
+  events.sort((a, b) => a.date.localeCompare(b.date));
   events.forEach(event => {
     const item = document.createElement("div");
     item.className = "event";
